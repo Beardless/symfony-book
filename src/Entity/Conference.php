@@ -34,7 +34,6 @@ class Conference
     private Collection $comments;
 
     #[ORM\Column(length: 255)]
-    #[UniqueEntity('slug')]
     private ?string $slug = null;
 
     public function __construct()
