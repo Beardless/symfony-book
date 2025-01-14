@@ -46,7 +46,9 @@ class CommentCrudController extends AbstractCrudController
         yield TextareaField::new('text')
             ->hideOnIndex();
         yield EmailField::new('email');
-        yield TextField::new('photoFilename')
+        yield ImageField::new('photoFilename')
+            ->setBasePath('/uploads/photos')
+            ->setLabel('Photo')
             ->onlyOnIndex();
 
         $createdAt = DateTimeField::new('createdAt')
