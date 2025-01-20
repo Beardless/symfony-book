@@ -17,7 +17,7 @@ function Comment({ comments }) {
         <div className="shadow border rounded-3 p-3 mb-4">
           <div className="comment-img mr-3">
             {!comment.photoFilename ? (
-              ""
+              "a"
             ) : (
               <a
                 href={
