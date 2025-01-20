@@ -7,6 +7,14 @@ size: S
 build:
     flavor: none
 
+dependencies:
+  nodejs:
+    n: "*"
+
+variables:
+  env:
+    N_PREFIX: /app/.global
+
 web:
     commands:
         start: sleep
@@ -24,4 +32,6 @@ hooks:
 
         curl -fs https://get.symfony.com/cloud/configurator | bash
 
-        NODE_VERSION=22 node-build
+        n auto
+
+        hash -r

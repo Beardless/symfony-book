@@ -22,5 +22,8 @@
   "devDependencies": {
     "sass": "^1.83.4",
     "sass-loader": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18 < 22"
   }
 }
